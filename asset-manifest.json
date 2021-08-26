@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/LYejin/nwitter.git/static/js/main.1f6cd43a.chunk.js",
+    "main.js.map": "/LYejin/nwitter.git/static/js/main.1f6cd43a.chunk.js.map",
+    "runtime-main.js": "/LYejin/nwitter.git/static/js/runtime-main.223c9ee3.js",
+    "runtime-main.js.map": "/LYejin/nwitter.git/static/js/runtime-main.223c9ee3.js.map",
+    "static/js/2.5eba5a2f.chunk.js": "/LYejin/nwitter.git/static/js/2.5eba5a2f.chunk.js",
+    "static/js/2.5eba5a2f.chunk.js.map": "/LYejin/nwitter.git/static/js/2.5eba5a2f.chunk.js.map",
+    "index.html": "/LYejin/nwitter.git/index.html",
+    "precache-manifest.2c2e05ea280b86c7c01f33bf152293a9.js": "/LYejin/nwitter.git/precache-manifest.2c2e05ea280b86c7c01f33bf152293a9.js",
+    "service-worker.js": "/LYejin/nwitter.git/service-worker.js",
+    "static/js/2.5eba5a2f.chunk.js.LICENSE.txt": "/LYejin/nwitter.git/static/js/2.5eba5a2f.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.223c9ee3.js",
+    "static/js/2.5eba5a2f.chunk.js",
+    "static/js/main.1f6cd43a.chunk.js"
+  ]
+}
