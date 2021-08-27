@@ -7,6 +7,7 @@ import { faPlus, faTimes } from "@fortawesome/free-solid-svg-icons";
 const NweetFactory = ({ userObj }) => {
   const [nweet, setNweet] = useState("");
   const [attachment, setAttachment] = useState("");
+
   const onSubmit = async (event) => {
     event.preventDefault();
     if (nweet === "") {
@@ -26,16 +27,18 @@ const NweetFactory = ({ userObj }) => {
       creatorId: userObj.uid,
       attachmentUrl,
     };
-    await dbService.collection("nweets").add(nweetObj);
+    await dbService.collection("taxiTogether").add(nweetObj);
     setNweet("");
     setAttachment("");
   };
+
   const onChange = (event) => {
     const {
       target: { value },
     } = event;
     setNweet(value);
   };
+
   const onFileChange = (event) => {
     const {
       target: { files },
@@ -52,7 +55,9 @@ const NweetFactory = ({ userObj }) => {
       reader.readAsDataURL(theFile);
     }
   };
+
   const onClearAttachment = () => setAttachment("");
+
   return (
     <form onSubmit={onSubmit} className="factoryForm">
       <div className="factoryInput__container">

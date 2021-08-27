@@ -3,24 +3,26 @@ import { dbService, storageService } from "fbase";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash, faPencilAlt } from "@fortawesome/free-solid-svg-icons";
 
-const Nweet = ({ nweetObj, isOwner }) => {
+const GoodsTogetherNweet = ({ nweetObj, isOwner }) => {
   const [editing, setEditing] = useState(false);
   const [newNweet, setNewNweet] = useState(nweetObj.text);
   const onDeleteClick = async () => {
     const ok = window.confirm("Are you sure you want to delete this nweet?");
     if (ok) {
-      await dbService.doc(`nweets/${nweetObj.id}`).delete();
+      await dbService.doc(`goodsTogether/${nweetObj.id}`).delete();
       await storageService.refFromURL(nweetObj.attachmentUrl).delete();
     }
   };
   const toggleEditing = () => setEditing((prev) => !prev);
+
   const onSubmit = async (event) => {
     event.preventDefault();
-    await dbService.doc(`nweets/${nweetObj.id}`).update({
+    await dbService.doc(`goodsTogether/${nweetObj.id}`).update({
       text: newNweet,
     });
     setEditing(false);
   };
+
   const onChange = (event) => {
     const {
       target: { value },
@@ -67,4 +69,4 @@ const Nweet = ({ nweetObj, isOwner }) => {
   );
 };
 
-export default Nweet;
+export default GoodsTogetherNweet;

@@ -8,6 +8,7 @@ const AuthForm = () => {
   const [password, setPassword] = useState("");
   const [newAccount, setNewAccount] = useState(true);
   const [error, setError] = useState("");
+
   const onChange = (event) => {
     const {
       target: { name, value },
@@ -36,6 +37,7 @@ const AuthForm = () => {
     }
   };
   const toggleAccount = () => setNewAccount((prev) => !prev);
+
   return (
     <>
       <form onSubmit={onSubmit} className="container">

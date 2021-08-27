@@ -1,12 +1,9 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faTwitter,
-  faGoogle,
-  faGithub,
-} from "@fortawesome/free-brands-svg-icons";
+import { faGoogle, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { authService, firebaseInstance } from "fbase";
 import AuthForm from "components/AuthForm";
+import logo from "routes/logo.jpg";
 
 const Auth = () => {
   const onSocialClick = async (event) => {
@@ -21,14 +18,21 @@ const Auth = () => {
     }
     await authService.signInWithPopup(provider);
   };
+
   return (
     <div className="authContainer">
-      <FontAwesomeIcon
-        icon={faTwitter}
-        color={"#04AAFF"}
-        size="3x"
-        style={{ marginBottom: 30 }}
-      />
+      <div>
+        <img
+          name="logo"
+          src={logo}
+          width="360"
+          height="200"
+          border="3"
+          alt=""
+          align-items="center"
+          justify-content="center"
+        />
+      </div>
       <AuthForm />
       <div className="authBtns">
         <button onClick={onSocialClick} name="google" className="authBtn">

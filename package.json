@@ -4,21 +4,23 @@
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.14.0",
-    "@fortawesome/fontawesome-svg-core": "^1.2.30",
-    "@fortawesome/free-brands-svg-icons": "^5.14.0",
-    "@fortawesome/free-regular-svg-icons": "^5.14.0",
-    "@fortawesome/free-solid-svg-icons": "^5.14.0",
-    "@fortawesome/react-fontawesome": "^0.1.11",
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/free-brands-svg-icons": "^5.15.4",
+    "@fortawesome/free-regular-svg-icons": "^5.15.4",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@fortawesome/react-fontawesome": "^0.1.15",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
-    "firebase": "^7.18.0",
-    "gh-pages": "^3.1.0",
+    "firebase": "^7.24.0",
+    "gh-pages": "^3.2.3",
+    "global": "^4.4.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.3",
-    "uuid": "^8.3.0"
+    "react-scripts": "^4.0.3",
+    "react-text-truncate": "^0.17.0",
+    "uuid": "^8.3.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -42,5 +44,11 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://nomadcoders.github.io/nwitter"
+  "homepage": "https://LYejin.github.io/nwitter",
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.1",
+    "prettier": "^2.3.2"
+  }
 }
