@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { dbService } from "fbase";
-import TaxiTogetherNweet from "components/TaxiTogetherNweet";
-import TaxiTogetherNweetFactory from "components/TaxiTogetherNweetFactory";
+import TaxiTogetherNweet from "components/TaxiTN/TaxiTogetherNweet";
+import TaxiTogetherNweetFactory from "components/TaxiTN/TaxiTogetherNweetFactory";
 
 const TaxiTogether = ({ userObj }) => {
   const [nweets, setNweets] = useState([]);
